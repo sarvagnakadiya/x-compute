@@ -1,0 +1,275 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wormholeRelayer",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "numbers",
+						"type": "uint256[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "senderChain",
+						"type": "uint16"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "calculatedResult",
+						"type": "uint256"
+					}
+				],
+				"name": "GreetingReceived",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "calculatedResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumbersArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbersArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_array",
+						"type": "uint256[]"
+					}
+				],
+				"name": "performOperations",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "targetChain",
+						"type": "uint16"
+					}
+				],
+				"name": "quoteCrossChainGreeting",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "targetChain",
+						"type": "uint16"
+					}
+				],
+				"name": "quoteCrossChainGreetingRefundPerUnitGasUnused",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "refundPerUnitGasUnused",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "payload",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes[]",
+						"name": "",
+						"type": "bytes[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sourceChain",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "receiveWormholeMessages",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "targetChain",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "targetAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint16",
+						"name": "refundChain",
+						"type": "uint16"
+					}
+				],
+				"name": "sendCrossChainGreeting",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "wormholeRelayer",
+				"outputs": [
+					{
+						"internalType": "contract IWormholeRelayer",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Wormhole/destination.sol": "Destination"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Wormhole/Interface/IWormholeReceiver.sol": {
+			"keccak256": "0x2a501555e064e1d1ec5fec67e2fbfa010ab4181e0c2e58b81e67eedab3c63427",
+			"license": "Apache 2",
+			"urls": [
+				"bzz-raw://d094f69c53c3f019333385b081cf92c72027807153b863d6095466b7f1fab19b",
+				"dweb:/ipfs/QmQehhYezKYZrLPMTdwTZJbqUSHXJu52DCSzVd6DQosY46"
+			]
+		},
+		"Wormhole/Interface/IWormholeRelayer.sol": {
+			"keccak256": "0x166225811d85b65fb0a64ca3aaebef64d52258e3bdaa38c64281fc9de1b4eacf",
+			"license": "Apache 2",
+			"urls": [
+				"bzz-raw://4da78468a8881d59520bfa9e11212876f19d82f8a513013014f0495582d71f7c",
+				"dweb:/ipfs/QmdHL7wavRb5MDq9NFh5B3zW4ZHB6urratZy6ji8bKs7Ys"
+			]
+		},
+		"Wormhole/destination.sol": {
+			"keccak256": "0xa8e93c61210d5f9f27ed230c451cd2fa57d223751bf00af353b5c8e7ddb89759",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://55a55be6be7ca6cb7f9c61cb1c80a0b3f73a91db77c047aeda64a91f8b55f672",
+				"dweb:/ipfs/QmWhozBpHMHodkGGPD9TWVmpPjRqQFqb9XtNJa8JRoKFLK"
+			]
+		}
+	},
+	"version": 1
+}
